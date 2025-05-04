@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+}
+
+:root {
+  --bg: #f4f4f4;
+  --text: #333;
+  --card: #fff;
+}
+
+body.dark {
+  --bg: #1e1e1e;
+  --text: #e4e4e4;
+  --card: #2e2e2e;
+  color: #000;
+}
+
+.container {
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: var(--card);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+input[type="text"], input[type="datetime-local"] {
+  flex: 1 1 200px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.filters {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.filters button {
+  margin: 0 5px;
+  background-color: #ccc;
+  color: #000;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e8e8e8;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  cursor: grab;
+}
+
+.task-item.done {
+  text-decoration: line-through;
+  background-color: #c1f0c1;
+}
+
+.theme-toggle {
+  text-align: right;
+  padding: 10px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: gray;
+}

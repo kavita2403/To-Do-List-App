@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do-List App</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="theme-toggle">
+    <label>
+      <input type="checkbox" id="theme-switch" />
+      <span>🌞 / 🌙</span>
+    </label>
+  </div>
+  <div class="container">
+    <h1>📋 To-Do-List App</h1>
+    <div class="input-group">
+      <input type="text" id="task-input" placeholder="Task Title..." />
+      <input type="datetime-local" id="task-date" />
+      <button id="add-btn">Add ➕</button>
+    </div>
+    <div class="filters">
+      <button data-filter="all">All</button>
+      <button data-filter="pending">Pending</button>
+      <button data-filter="done">Done</button>
+    </div>
+    <ul id="task-list" class="task-list" ondrop="drop(event)" ondragover="allowDrop(event)"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
